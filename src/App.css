@@ -1,0 +1,25 @@
+* {
+    background-color: #1d1333;
+}
+
+.logo {
+    width: 128px;
+    margin-top: 1.7rem;
+    margin-left: 5.5rem;
+}
+
+.bt {
+    background: hsla(211, 95%, 43%, 1);
+    background: linear-gradient(0deg, hsla(211, 95%, 43%, 1) 0%, hsla(183, 54%, 47%, 1) 73%);
+    background: -moz-linear-gradient(0deg, hsla(211, 95%, 43%, 1) 0%, hsla(183, 54%, 47%, 1) 73%);
+    background: -webkit-linear-gradient(0deg, hsla(211, 95%, 43%, 1) 0%, hsla(183, 54%, 47%, 1) 73%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#056BD7", endColorstr="#37B1B8", GradientType=1);
+    color: white;
+    margin-right: 7.5rem;
+    margin-top: 1.5rem;
+    padding: 0.6rem;
+    width: 7rem;
+    border-radius: 0.6rem;
+    font-family: 'Inter', monospace;
+    font-weight: 500;
+}

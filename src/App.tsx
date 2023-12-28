@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className='main-bg'>
+    <div>
       <Navbar />
       <Routes>
         <Route path = '/' element={<ProfilePage/>} />
