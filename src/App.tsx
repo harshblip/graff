@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import ProfilePage from './components/Profilepage';
+import ProfilePage from './components/profilepage/Profilepage';
 import CreateGraph from './components/CreateGraph'
 import AccountSettings from './components/AccountSettings';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div>
+    <div className='main-bg'>
+      <Navbar />
       <Routes>
         <Route path = '/' element={<ProfilePage/>} />
         <Route path = '/settings' element={<CreateGraph/>} />
