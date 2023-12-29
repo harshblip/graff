@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Profilepage.css';
 import ProfileCard from './ProfileCard';
 import UsageMetrics from './UsageMetrics';
@@ -6,11 +6,10 @@ import ActivityFeed from './ActivityFeed';
 import Sidebar from '../Sidebar';
 
 const ProfilePage: React.FC = () => {
+    const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
     return (
         <div style={{ display: 'flex' }}>
-            <div className='h-[4rem] w-[20rem] absolute md:relative md:h-[24rem] md:w-[14rem] ml-[4rem] mt-[5rem] border border-white'>
-            
-            </div>
+            <Sidebar showAdvancedOptions={showAdvancedOptions}/>
             <div style={{ display: 'flex', flexWrap: 'wrap' }} className='mt-28 md:mt-0'>
                 < ProfileCard />
                 < UsageMetrics />
