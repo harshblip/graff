@@ -1,7 +1,7 @@
 * {
-    background-color: #0c0c1c;
     transition: all 0.3s ease-in;
     color: white;
+    background-image: url('images/graff.png');
 }
 
 .logo {
@@ -24,4 +24,23 @@
     border-radius: 0.6rem;
     font-family: 'Inter', monospace;
     font-weight: 500;
+}
+
+input,
+textarea {
+    border: 1px solid white;
+}
+
+.main-bg {
+    /* position: absolute;
+    height: 50rem;
+    width: 50rem;
+    margin-left: 12.5rem;
+    margin-top: -8rem;
+    filter: blur(4px);
+    object-fit: contain; */
+}
+
+.cls {
+    z-index: 1;
 }

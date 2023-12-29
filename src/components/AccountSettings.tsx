@@ -5,6 +5,7 @@ type SettingsProps = {
     name: string;
     email: string;
     bio: string;
+    setShowAdvancedOptions: (showAdvancedOptions: boolean) => void;
     setName: (name: string) => void;
     setEmail: (email: string) => void;
     setBio: (bio: string) => void;
@@ -19,27 +20,33 @@ const AccountSettings: React.FC<SettingsProps> = (props) => {
         props.setName(name);
         props.setEmail(email);
         props.setBio(bio);
+        props.setShowAdvancedOptions(false)
     };
 
-    const [showAdvancedOptions, setShowAdvancedOptions] = useState(true);
 
     return (
-        <div style={{ display: 'flex' }}>
-            < Sidebar showAdvancedOptions={showAdvancedOptions} />
+        <div style={{ display: 'flex', position: 'absolute', backgroundColor: '#0c0c1c' }}>
             <input
                 type="text"
                 value={name}
                 onChange={e => setName(e.target.value)}
+                style={{ border: 'white' }}
             />
             <input
                 type="email"
                 value={email}
-                onChange={e => setEmail(e.target.value)} />
+                onChange={e => setEmail(e.target.value)}
+                style={{ border: 'white' }}
+            />
             <textarea
                 value={bio}
-                onChange={e => setBio(e.target.value)} />
+                onChange={e => setBio(e.target.value)}
+                style={{ border: 'white' }}
+            />
             <button
-                onClick={handleSave}>Save</button>
+                onClick={handleSave}>
+                Save
+            </button>
         </div>
     );
 };
