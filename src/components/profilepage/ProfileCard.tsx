@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Profilepage.css'
 import AccountSettings from '../AccountSettings';
+import ActivePlan from '../ActivePlan';
 
 type CardProps = {
     name: string;
@@ -21,25 +22,29 @@ const ProfileCard: React.FC<CardProps> = (props) => {
     const handleClick = () => {
         props.setShowAdvancedOptions(!props.showAdvancedOptions);
     }
+    // icon
+    // <span className="material-symbols-outlined invisible" onClick={handleClick}>
+    //     edit
+    // </span>
 
     return (
         <>
-            <div className='flex flex-col h-[10rem] w-[20rem] ml-[4rem] mt-[5rem] border border-white card-bg'>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <h2>{props.name}</h2>
-                    <span className={`material-symbols-outlined ${"edit"}-icon`} onClick={handleClick}>
-                        edit
-                    </span>
+            <div className='flex flex-col h-[14rem] w-[24rem] ml-[4rem] mt-[5rem] rounded-xl border border-white card-bg items-center card-bg'>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div className='flex flex-col items-start mt-4'>
+                        <p className='font-bold text-gray-300 text-[8px]'>NAME</p>
+                        <p className='text-sm'>{props.name}</p>
+                    </div>
+                    <div className='flex flex-col items-start mt-3'>
+                        <p className='font-bold text-gray-300 text-[8px]'>EMAIL</p>
+                        <p className='text-sm'>{props.email}</p>
+                    </div>
+                    <div className='flex flex-col items-start mt-3'>
+                        <p className='font-bold text-gray-300 text-[8px]'>BIO</p>
+                        <p className='text-sm'>{props.bio}</p>
+                    </div>
                 </div>
-                <div>
-                    {props.email}
-                </div>
-                <div>
-                    {props.bio}
-                </div>
-                <div>
-                    long active plan
-                </div>
+                <ActivePlan/>
             </div>
         </>
     );

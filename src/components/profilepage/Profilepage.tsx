@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Profilepage.css';
 import ProfileCard from './ProfileCard';
-import UsageMetrics from './UsageMetrics';
+import UsageMetrics from './UsageMetrics/UsageMetrics';
 import ActivityFeed from './ActivityFeed';
 import AccountSettings from '../AccountSettings';
 import Sidebar from '../Sidebar';
@@ -12,12 +12,12 @@ const ProfilePage: React.FC = () => {
     const [email, setEmail] = useState('memail');
     const [bio, setBio] = useState('i am so good');
     return (
-        <div>
+        <div className=''>
             <p>{name}</p>
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex'}}>
                 <Sidebar showAdvancedOptions={showAdvancedOptions} />
                 {!showAdvancedOptions ?
-                    <div style={{ display: 'flex', flexWrap: 'wrap' }} className='mt-28 md:mt-0'>
+                    <div style={{ display: 'flex', flexWrap: 'wrap' }} className='md:mt-0'>
                         < ProfileCard
                             name={name}
                             email={email}
