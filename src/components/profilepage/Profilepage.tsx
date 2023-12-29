@@ -7,15 +7,19 @@ import Sidebar from '../Sidebar';
 
 const ProfilePage: React.FC = () => {
     const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
+    const [name, setName] = useState('Shourya'); // name we get from email id after successfull authentication
     return (
-        <div style={{ display: 'flex' }}>
-            <Sidebar showAdvancedOptions={showAdvancedOptions}/>
-            <div style={{ display: 'flex', flexWrap: 'wrap' }} className='mt-28 md:mt-0'>
-                < ProfileCard />
-                < UsageMetrics />
-                < ActivityFeed />
+        <>
+        <p>{name}</p>
+            <div style={{ display: 'flex' }}>
+                <Sidebar showAdvancedOptions={showAdvancedOptions} />
+                <div style={{ display: 'flex', flexWrap: 'wrap' }} className='mt-28 md:mt-0'>
+                    < ProfileCard />
+                    < UsageMetrics />
+                    < ActivityFeed />
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 

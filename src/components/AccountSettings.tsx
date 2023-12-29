@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 
-const AccountSettings: React.FC = () => {
-    console.log('as');
+type SettingsProps = {
+    name: string;
+    email: string;
+    bio: string;
+}
+
+const AccountSettings: React.FC<SettingsProps> = (props) => {
+
     const [showAdvancedOptions, setShowAdvancedOptions] = useState(true);
     return (
-        <div>
-            < Sidebar showAdvancedOptions={showAdvancedOptions}/>
-            account settings
+        <div style={{ display: 'flex' }}>
+            < Sidebar showAdvancedOptions={showAdvancedOptions} />
+
         </div>
-        );
+    );
 };
 
 export default AccountSettings;
