@@ -14,11 +14,11 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path = '/' element={<ProfilePage/>} />
-        <Route path = '/settings' element={<CreateGraph/>} />
-        <Route path = '/AccSettings' element={<AccountSettings name={name} email={email} bio={bio}/>} />
-      </Routes>
-    </div>
+        <Route path='/' element={<ProfilePage />} />
+        <Route path='/settings' element={<CreateGraph />} />
+        <Route path='/AccSettings' element={<AccountSettings name={name} email={email} bio={bio} setName={setName} setEmail={setEmail} setBio={setBio} />} />
+      </Routes> // not useful here - using redux for global state management
+    </div> // would make use of this navigations as we won't have to pass props. :)
   );
 }
 
