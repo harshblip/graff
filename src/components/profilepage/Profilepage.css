@@ -31,11 +31,11 @@
     width: 2px;
     height: 20rem;
     background: linear-gradient(to bottom, transparent 45%, white 45%, white 55%, transparent 55%),
-               linear-gradient(to bottom, transparent 55%, white 55%, white 65%, transparent 65%),
-               linear-gradient(to bottom, transparent 65%, white 65%, white 75%, transparent 75%),
-               linear-gradient(to bottom, transparent 75%, white 75%, white 85%, transparent 85%),
-               linear-gradient(to bottom, transparent 85%, white 85%, white 95%, transparent 95%),
-               linear-gradient(to bottom, transparent 95%, white 95%, white 100%, transparent 100%);
+        linear-gradient(to bottom, transparent 55%, white 55%, white 65%, transparent 65%),
+        linear-gradient(to bottom, transparent 65%, white 65%, white 75%, transparent 75%),
+        linear-gradient(to bottom, transparent 75%, white 75%, white 85%, transparent 85%),
+        linear-gradient(to bottom, transparent 85%, white 85%, white 95%, transparent 95%),
+        linear-gradient(to bottom, transparent 95%, white 95%, white 100%, transparent 100%);
     background-repeat: no-repeat;
     background-position: center;
     font-size: 16px;
@@ -43,4 +43,11 @@
     text-align: center;
     margin-left: 4rem;
     margin-right: 1rem;
-   }
+}
+
+.profilephoto {
+    height: 10rem;
+    margin-right: 9rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+}

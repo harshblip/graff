@@ -18,7 +18,7 @@ const ProfilePage: React.FC = () => {
             <div style={{ display: 'flex'}}>
                 <Sidebar showAdvancedOptions={showAdvancedOptions} />
                 {!showAdvancedOptions ?
-                    <div style={{ display: 'flex', flexWrap: 'wrap' }} className='md:mt-0'>
+                    <div className='md:mt-0 flex flex-wrap mt-16'>
                         < ProfileCard
                             name={name}
                             email={email}
