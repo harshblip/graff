@@ -26,6 +26,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('images/graff.png');
+  background-position: left;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-position: right;
+  }
 }
 
 code {

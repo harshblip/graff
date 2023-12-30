@@ -10,15 +10,15 @@ const ActivityFeed: React.FC = () => {
             <div className="section-selector mt-2 ">
                 <button
                     onClick={() => setActiveSection("recentgraphs")}
-                    className={`${activeSection === "recentgraphs" ? 'title ' : 'p-1 '}`}
+                    className={`${activeSection === "recentgraphs" ? 'title p-1' : 'p-1 '}`}
                 >Graphs Created</button>
                 <button
                     onClick={() => setActiveSection("queries")}
-                    className={`${activeSection === "queries" ? 'title' : 'p-1'}`}
+                    className={`${activeSection === "queries" ? 'title p-1' : 'p-1'}`}
                 >Graphs Shared</button>
                 <button
                     onClick={() => setActiveSection("savedgraphs")}
-                    className={`${activeSection === "savedgraphs" ? 'title ' : 'p-1 '}`}
+                    className={`${activeSection === "savedgraphs" ? 'title p-1' : 'p-1 '}`}
                 >
                     Saved Graphs
                 </button>

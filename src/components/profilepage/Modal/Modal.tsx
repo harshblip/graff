@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SketchPicker } from 'react-color';
 import Graff from '../../../images/graff.png'
 
-import './Modal.css'    
+import './Modal.css'
 
 interface SectionProps {
     showModal: boolean;
@@ -30,17 +30,20 @@ const Modal: React.FC<SectionProps> = ({ showModal, setShowModal }) => {
                                 <input
                                     type="text"
                                     name="graphName"
-                                    placeholder="Graph Name" 
+                                    placeholder="Graph Name"
                                     className='bg-transparent mt-4 ml-4 rounded-md p-1' />
                                 <input
                                     type="text"
                                     name="description"
-                                    placeholder="Description" 
+                                    placeholder="Description"
                                     className='bg-transparent mt-4 ml-4 rounded-md p-1' />
-                                <button onClick={() => setShowColorPicker(!showColorPicker)}
-                                className='mt-6 ml-4'
+                                <button onClick={(e) => {
+                                    e.preventDefault();
+                                    setShowColorPicker(!showColorPicker)
+                                }}
+                                    className='mt-6 ml-4'
                                 >Choose Color</button>
-                                {showColorPicker ? ( 
+                                {showColorPicker ? (
                                     <SketchPicker
                                         color={color}
                                         onChange={updatedColor => {
@@ -59,7 +62,7 @@ const Modal: React.FC<SectionProps> = ({ showModal, setShowModal }) => {
                             </form>
                         </div>
                         <div>
-                            <img src={Graff} alt="Graph" className='mt-20 w-[12rem] ml-8 rounded-xl border'/>
+                            <img src={Graff} alt="Graph" className='mt-20 w-[12rem] ml-8 rounded-xl border' />
                         </div>
                     </div>
                 </div>

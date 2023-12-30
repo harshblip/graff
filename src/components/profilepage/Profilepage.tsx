@@ -11,7 +11,7 @@ const ProfilePage: React.FC = () => {
     const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
     const [name, setName] = useState('Shourya'); // name we get from email id after successfull authentication
     const [email, setEmail] = useState('memail@gmail.com');
-    const [bio, setBio] = useState('i am so good');
+    const [bio, setBio] = useState('Hey, this is my bio!');
     return (
         <div className=''>
             <div style={{ display: 'flex'}}>

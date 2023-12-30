@@ -18,7 +18,7 @@ const AccountSettings: React.FC<SettingsProps> = (props) => {
     const [name, setName] = useState(props.name);
     const [email, setEmail] = useState(props.email);
     const [bio, setBio] = useState(props.bio);
-    const [password, setPassword] = useState('');
+    const [password, setPassword] = useState('password');
     const [value, setValue] = useState('');
     const handleClick = () => {
         signInWithPopup(auth, provider).then((data) => {
@@ -45,7 +45,7 @@ const AccountSettings: React.FC<SettingsProps> = (props) => {
 
     return (
         <div className='flex flex-col'>
-            <p className='ml-4 mt-36 md:mt-0 md:ml-16 text-4xl'>Edit Your Account</p>
+            <p className='ml-10 mt-36 md:mt-0 md:ml-16 text-4xl'>Edit Your Account</p>
             <div className='flex flex-col md:mr-0 md:flex-row justify-between backdrop-blur-sm '>
                 <div
                     className='flex flex-col mt-8 border border-white w-[18rem] bg-transparent space-y-10 ml-12 md:ml-16 rounded-lg'>
