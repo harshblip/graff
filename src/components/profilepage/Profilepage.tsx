@@ -5,6 +5,7 @@ import UsageMetrics from './UsageMetrics/UsageMetrics';
 import ActivityFeed from './ActivityFeed/ActivityFeed';
 import AccountSettings from '../AccountSettings';
 import Sidebar from '../Sidebar';
+import AddGraph from './AddGraph';
 
 const ProfilePage: React.FC = () => {
     const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
@@ -29,6 +30,7 @@ const ProfilePage: React.FC = () => {
                             setShowAdvancedOptions={setShowAdvancedOptions} />
                         < UsageMetrics />
                         < ActivityFeed />
+                        < AddGraph />
                     </div>
                     : <AccountSettings
                         name={name}

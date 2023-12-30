@@ -6,7 +6,7 @@ type SidebarProps = {
 
 const Sidebar: React.FC<SidebarProps> = (props) => {
     return (
-        <div className='h-[4rem] w-[20rem] absolute md:relative md:h-[24rem] md:w-[14rem] ml-[2rem] mt-[3rem] border border-r-8  border-r-blue-300 rounded-xl text-white bg-transparent overflow-auto text-left'>
+        <div className='h-[4rem] w-[20rem] absolute md:relative md:h-[24rem] md:w-[24rem] ml-[2rem] mt-[3rem] border border-r-8  border-r-blue-300 rounded-xl text-white bg-transparent overflow-auto text-left backdrop-blur-sm'>
             <div >
 
                 <div className='flex flex-col mt-20 space-y-8'>

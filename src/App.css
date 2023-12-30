@@ -36,7 +36,8 @@ textarea {
 }
 
 .title {
-    background: linear-gradient(0deg, hsla(211, 95%, 43%, 1) 0%, hsla(183, 54%, 47%, 1) 53%);
+    background: linear-gradient(0deg, hsla(211, 95%, 43%, 1) 0%, rgb(225, 230, 230) 53%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
