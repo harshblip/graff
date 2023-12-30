@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Profilepage.css';
 import ProfileCard from './ProfileCard';
 import UsageMetrics from './UsageMetrics/UsageMetrics';
-import ActivityFeed from './ActivityFeed';
+import ActivityFeed from './ActivityFeed/ActivityFeed';
 import AccountSettings from '../AccountSettings';
 import Sidebar from '../Sidebar';
 
