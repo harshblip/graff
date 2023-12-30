@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Approach to the project
+
+The project was too big but contructive and was a really worn-out exercise to the brain. This test really put my skills to test under a time constraint. Really was a great task from you guys.
+
+This website, if i am onboarded i would make this site more scalable using redux. which would just give the sites four more hands to things more easily. I would integrate token-based authentication into the app ensuring sharp security. Also, use Next.js for parallel routing, better SEO and stuff.
+
+Waiting to hear from you guys.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -44,3 +52,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
