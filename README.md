@@ -6,7 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The project was too big but contructive and was a really worn-out exercise to the brain. This test really put my skills to test under a time constraint. Really was a great task from you guys.
 
-This website, if i am onboarded i would make this site more scalable using redux. which would just give the sites four more hands to things more easily. I would integrate token-based authentication into the app ensuring sharp security. Also, use Next.js for parallel routing, better SEO and stuff.
+This website, if given more days I would have made it scalable to using redux to it which would just give the sites four more hands to things more easily. I would integrate token-based authentication into the app ensuring sharp security. Also, use Next.js for parallel routing, better SEO and stuff. Best website to go live.
+
+This was a limited time for such number of pages, each having number of functionalities and description. Yet, I did my best. Hope you guys like it.
 
 Waiting to hear from you guys.
 
