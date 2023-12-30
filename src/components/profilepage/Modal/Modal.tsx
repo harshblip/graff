@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback, MouseEvent, KeyboardEvent } from 'react';
+import React, { useState } from 'react';
 import { SketchPicker } from 'react-color';
 import './Modal.css'    
 

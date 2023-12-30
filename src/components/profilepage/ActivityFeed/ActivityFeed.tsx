@@ -5,7 +5,7 @@ import Queries from './Queries';
 const ActivityFeed: React.FC = () => {
     const [activeSection, setActiveSection] = useState<"recentgraphs" | "queries" >("recentgraphs");
     return (
-        <div className='h-[12rem] w-[24rem] mb-8 mr-24 ml-[4rem] mt-[2rem] border border-white rounded-xl overflow-auto'>
+        <div className='h-[12rem] w-[24rem] mb-8 mr-24 ml-[4rem] mt-[2rem] border border-white rounded-xl overflow-auto overflow-y-scroll no-scrollbar'>
             <div className="section-selector mt-2 ">
                 <button
                     onClick={() => setActiveSection("recentgraphs")}

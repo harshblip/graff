@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CreateGraph: React.FC = () => {
+const SavedGraphs: React.FC = () => {
     return (
         <div>
             create graph
@@ -8,4 +8,4 @@ const CreateGraph: React.FC = () => {
         );
 };
 
-export default CreateGraph;
+export default SavedGraphs;
