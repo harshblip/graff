@@ -23,9 +23,7 @@ const ProfileCard: React.FC<CardProps> = (props) => {
         props.setShowAdvancedOptions(!props.showAdvancedOptions);
     }
     // icon
-    // <span className="material-symbols-outlined invisible" onClick={handleClick}>
-    //     edit
-    // </span>
+
 
     return (
         <>
@@ -42,9 +40,12 @@ const ProfileCard: React.FC<CardProps> = (props) => {
                     <div className='flex flex-col items-start mt-3'>
                         <p className='font-bold text-gray-300 text-[8px]'>BIO</p>
                         <p className='text-sm'>{props.bio}</p>
+                        <span className="material-symbols-outlined" onClick={handleClick}>
+                            edit
+                        </span>
                     </div>
                 </div>
-                <ActivePlan/>
+                <ActivePlan />
             </div>
         </>
     );
