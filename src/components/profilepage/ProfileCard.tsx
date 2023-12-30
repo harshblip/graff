@@ -27,7 +27,7 @@ const ProfileCard: React.FC<CardProps> = (props) => {
 
     return (
         <div className='flex flex-col'>
-            <p className='ml-16 mt-6 text-4xl'>Hey! {props.name}</p>
+            <p className='ml-16 mt-16 md:mt-6 text-4xl'>Hey! {props.name}</p>
             <div className='flex h-[14rem] w-[24rem] ml-[4rem] mt-[1rem] rounded-xl border border-white card-bg items-center card-bg'>
                 <div>
                     <img src={p1} alt="profilephoto" className='profilephoto' />
