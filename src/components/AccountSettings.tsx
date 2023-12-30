@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Sidebar from './Sidebar';
 import Google from '../images/google.png'
 import { auth, provider } from '../GoogleAuth/config'
 import { signInWithPopup } from 'firebase/auth'
@@ -50,7 +49,7 @@ const AccountSettings: React.FC<SettingsProps> = (props) => {
             <div className='flex flex-col md:mr-0 md:flex-row justify-between backdrop-blur-sm '>
                 <div
                     className='flex flex-col mt-8 border border-white w-[18rem] bg-transparent space-y-10 ml-12 md:ml-16 rounded-lg'>
-                        <p className='ml-8 text-xl mt-4'>Change your credentials</p>
+                    <p className='ml-8 text-xl mt-4'>Change your credentials</p>
                     <input
                         type="text"
                         value={name}
@@ -77,16 +76,23 @@ const AccountSettings: React.FC<SettingsProps> = (props) => {
                     <button
                         onClick={handleSave}
                         className='border rounded-lg ml-10 mr-10 p-2 mb-10'
-                        >
+                    >
                         Save
                     </button>
                 </div>
-                <div className='separator invisible md:visible'><span className='ml-4'>OR</span></div>
-                <hr className='-mt-[14rem] mr-8 ml-16 visible md:invisible'/>
+                <div className='separator invisible md:visible'>
+                    <span className='ml-4'>OR</span>
+                </div>
+                <hr className='-mt-[14rem] mr-8 ml-16 visible md:invisible' />
                 <div className='flex flex-col mt-40 w-[18rem] bg-transparent space-y-10 ml-10 md:ml-0  md:mr-16 rounded-lg '>
-                    <button onClick={handleClick} className='bg-white ml-10 mr-10 text-black p-1 rounded-md flex -mt-20 md:mt-0'>
+                    <button
+                        onClick={handleClick}
+                        className='bg-white ml-10 mr-10 text-black p-1 rounded-md flex -mt-20 md:mt-0'>
                         <span>
-                            <img src={Google} alt="google" width={25} className='mr-4 ml-1' />
+                            <img
+                                src={Google}
+                                alt="google" width={25}
+                                className='mr-4 ml-1' />
                         </span>
                         Sign in with Google </button>
                     <button className='flex border ml-10 mr-10 text-white p-1 rounded-md'>

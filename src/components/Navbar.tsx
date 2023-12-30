@@ -10,10 +10,13 @@ const Nav = styled.div`
 const Navbar: React.FC = () => {
     return (
         <Nav>
-            <img src = {logo} alt='genoshi' className='logo'/>
+            <img
+                src={logo}
+                alt='genoshi'
+                className='logo' />
             <button className='bt invisible md:visible'> Logout </button>
         </Nav>
-        );
+    );
 };
 
 export default Navbar;

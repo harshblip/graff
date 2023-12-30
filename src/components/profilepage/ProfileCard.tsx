@@ -18,7 +18,6 @@ type CardProps = {
 
 const ProfileCard: React.FC<CardProps> = (props) => {
     const navigate = useNavigate();
-    const [open, setOpen] = useState(false);
 
     const handleClick = () => {
         props.setShowAdvancedOptions(!props.showAdvancedOptions);

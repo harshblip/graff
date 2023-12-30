@@ -10,9 +10,13 @@ const SavedGraphs: React.FC = () => {
     return (
         <div>
             {graphs.map(graph => (
-                <li key={graph.id} className='flex justify-between ml-4 mr-4 mt-4 '>
+                <li
+                    key={graph.id}
+                    className='flex justify-between ml-4 mr-4 mt-4 '>
                     <p>{graph.graphname}</p>
-                    <span onClick={onClick} className='material-symbols-outlined'>
+                    <span
+                        onClick={onClick}
+                        className='material-symbols-outlined'>
                         info
                     </span>
                     {

@@ -15,7 +15,10 @@ const AddGraph: React.FC = () => {
                         show_chart
                     </span>
                     <p>Add a new chart</p>
-                </div> : <Modal showModal={showModal} setShowModal={setShowModal} />
+                </div> : <Modal
+                    showModal={showModal}
+                    setShowModal={setShowModal}
+                />
             }
         </>
     );
