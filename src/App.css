@@ -1,7 +1,7 @@
 * {
     transition: all 0.3s ease-in;
     color: white;
-
+    font-family: 'Rubik', monospace;
 }
 
 .logo {
@@ -33,4 +33,10 @@ textarea {
 
 .cls {
     z-index: 1;
+}
+
+.title {
+    background: linear-gradient(0deg, hsla(211, 95%, 43%, 1) 0%, hsla(183, 54%, 47%, 1) 53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -1,11 +1,9 @@
-.section {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.section-selector {
+    display: flex;
+    justify-content: space-between;
     transition: transform 0.5s ease-in-out;
-    transform: translateX(100%);
 }
 
-.section.active {
-    transform: translateX(0);
+.container {
+    backdrop-filter: blur(4px);
 }
