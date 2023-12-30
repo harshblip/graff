@@ -10,11 +10,10 @@ import AddGraph from './AddGraph';
 const ProfilePage: React.FC = () => {
     const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
     const [name, setName] = useState('Shourya'); // name we get from email id after successfull authentication
-    const [email, setEmail] = useState('memail');
+    const [email, setEmail] = useState('memail@gmail.com');
     const [bio, setBio] = useState('i am so good');
     return (
         <div className=''>
-            <p>{name}</p>
             <div style={{ display: 'flex'}}>
                 <Sidebar showAdvancedOptions={showAdvancedOptions} />
                 {!showAdvancedOptions ?

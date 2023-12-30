@@ -27,8 +27,9 @@ const ProfileCard: React.FC<CardProps> = (props) => {
 
 
     return (
-        <div>
-            <div className='flex h-[14rem] w-[24rem] ml-[4rem] mt-[5rem] rounded-xl border border-white card-bg items-center card-bg'>
+        <div className='flex flex-col'>
+            <p className='ml-16 mt-6 text-4xl'>Hey! {props.name}</p>
+            <div className='flex h-[14rem] w-[24rem] ml-[4rem] mt-[1rem] rounded-xl border border-white card-bg items-center card-bg'>
                 <div>
                     <img src={p1} alt="profilephoto" className='profilephoto' />
                 </div>
@@ -37,6 +38,9 @@ const ProfileCard: React.FC<CardProps> = (props) => {
                         <div className='flex flex-col items-start mt-4'>
                             <p className='font-bold text-gray-300 text-[8px]'>NAME</p>
                             <p className='text-sm'>{props.name}</p>
+                            <span className="material-symbols-outlined mt-2 -ml-16 absolute" onClick={handleClick}>
+                                edit
+                            </span>
                         </div>
                         <div className='flex flex-col items-start mt-3'>
                             <p className='font-bold text-gray-300 text-[8px]'>EMAIL</p>
@@ -55,9 +59,5 @@ const ProfileCard: React.FC<CardProps> = (props) => {
         </div>
     );
 };
-
-{/* <span className="material-symbols-outlined mt-10 -ml-10" onClick={handleClick}>
-    edit
-</span> */}
 
 export default ProfileCard;

@@ -16,7 +16,7 @@ const UsageMetrics: React.FC = () => {
                 >Graphs Created</button>
                 <button
                     onClick={() => setActiveSection("section2")}
-                    className={`${activeSection === "section2" ? 'title p-1' : ''}`}
+                    className={`${activeSection === "section2" ? 'title p-1' : 'p-1'}`}
                 >Graphs Shared</button>
                 <button 
                     onClick={() => setActiveSection("section3")}
