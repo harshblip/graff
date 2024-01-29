@@ -27,6 +27,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url('images/graff.png');
   background-position: left;
+  transition: 0.2s all ease-in;
 }
 
 @media screen and (max-width: 800px) {

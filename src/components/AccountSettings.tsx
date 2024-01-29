@@ -44,7 +44,7 @@ const AccountSettings: React.FC<SettingsProps> = (props) => {
     console.log(value);
 
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col effect'>
             <p className='ml-10 mt-36 md:mt-0 md:ml-16 text-4xl'>Edit Your Account</p>
             <div className='flex flex-col md:mr-0 md:flex-row justify-between backdrop-blur-sm '>
                 <div
