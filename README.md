@@ -1,53 +1,64 @@
+<div align="center">
+  <img src = "https://cdn.dribbble.com/users/115224/screenshots/7205046/media/0c481c9f87a700d87364029599322f71.png?resize=1200x900&vertical=center" width="200" height="150"/>
+  
+  # Graff
+  <p> A prototype website built while maintaining a specific theme </p>
+     <img src = "https://img.shields.io/badge/typescript-%235849BE.svg?style=for-the-badge&logo=typescript&logoColor=white" />
+     <img src = "https://img.shields.io/badge/react-%2345b8d8.svg?style=for-the-badge&logo=react&logoColor=white" />
+     <img src = "https://img.shields.io/badge/firebase-%23F9A03C.svg?style=for-the-badge&logo=firebase&logoColor=white" />
+     <img src = "https://img.shields.io/badge/tailwindcss-%232088FF.svg?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://github.com/harshblip/pokeverse) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/harshblip/pokeverse)
+
+  <img src = "https://img.shields.io/badge/made_within-38hrs-green" />
+   <img src = "https://img.shields.io/badge/minds_involved-solo-blue" />
+   <img src = "https://img.shields.io/badge/time%20constrained%20task-8A2BE2" />
+</div>
+
+## What did i do in these 38hrs
+<p> 4 pages 1 Modal </p>
+<p> 12 main components </p>
+<p> Sub-components to every component for efficient/maintanable codebase  </p>
+<p> Smooth responsive design that fits every screen size </p>
+<p> Masked images for faster page reloads </p>
+<p> Firebase Auth skeleton added  </p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Approach to the project
+## Steps to run the project locally :
 
-The project was too big but contructive and was a really worn-out exercise to the brain. This test really put my skills to test under a time constraint. Really was a great task from you guys.
+### Step 1
+type this command on your command line to clone the repository to your local machine
+```bash
+git clone https://github.com/harshblip/graff.git
+```
+ ### Step 2
+ run this command to install all necessary packages
+ ```bash
+ npm install
+```
 
-This website, if given more days I would have made it scalable to using redux to it which would just give the sites four more hands to things more easily. I would integrate token-based authentication into the app ensuring sharp security. Also, use Next.js for parallel routing, better SEO and stuff. Best website to go live.
+### Step 3
+finally run this application on your ```localhost:3000``` to view the website
 
-This was a limited time for such number of pages, each having number of functionalities and description. Yet, I did my best. Hope you guys like it.
+## Website Screenshots😀🌟
 
-Waiting to hear from you guys.
+## Homepage
 
-## Available Scripts
+<img src = "/site_images/homepage.png" height="350" width="600"/>
 
-In the project directory, you can run:
+## Edit Profile
 
-### `npm start`
+<img src = "/site_images/editprofile.png" height="350" width="600"/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+|      Create Graph       |       Add Graph        |
+| :---------------------: | :----------------------: |
+| <img src = "/site_images/creategraph.jpg"  height="300"/> | <img src = "/site_images/addgraph.jpg" height="300"/> |
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
